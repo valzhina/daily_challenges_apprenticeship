@@ -24,6 +24,7 @@ public class GuessingGame {
 
             try {
                 int userGuess = input.nextInt();
+                input.nextLine();
 
                 if (userGuess > 10 || userGuess < 0) {
                     System.out.println("You’re guess is out of range. Please try again.");
@@ -45,6 +46,7 @@ public class GuessingGame {
             }
             catch (Exception e){
                 String badInput = input.next();
+                input.nextLine();
                 System.out.println("That’s not an integer, try again");
                 continue;
             }
